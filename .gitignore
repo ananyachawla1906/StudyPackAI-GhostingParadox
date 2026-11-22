@@ -1,0 +1,23 @@
+node_modules/
+dist/
+.env
+.DS_Store
+
+# Dependencies
+node_modules/
+
+# Environment variables and secrets
+.env
+.env.*
+**/.env
+**/.env.*
+
+# Build files
+dist/
+
+# System files
+.DS_Store
+
+# Allow example environment template
+!.env.example
+
