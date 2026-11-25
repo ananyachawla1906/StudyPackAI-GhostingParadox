@@ -115,7 +115,7 @@ for (let attempt = 0; attempt < 3; attempt++) {
   }
 }
 
-    const studyPack = response.text?.trim();
+    const studyPack = response?.text?.trim() || "";
 
     if (!studyPack) {
       return res.status(502).json({
