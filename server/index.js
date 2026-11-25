@@ -91,10 +91,10 @@ LECTURE NOTES:
 
 for (let attempt = 0; attempt < 3; attempt++) {
   try {
-    response = await ai.models.generateContent({
-      model: "gemini-3.8-flash",
-      contents: prompt
-    });
+    const response = await ai.models.generateContent({
+  model: "gemini-3.5-flash-lite",
+  contents: prompt
+});
     break;
   } catch (error) {
     const status = Number(
